@@ -1,16 +1,32 @@
 #header  {
-	background-color: gray;
+	background-color: #c0c0c0;
 	border-radius: 15px;
+	border: 3px outset gold;
+	width: 50%;
+	/*
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	*/
+}
+
+h1  {
+	font-size: 3em;
+	margin: 5px;
+}
+
+h2  {
+
+	margin: 5px;
 }
 
 #topContainer  {
 	background-color: red;
 
+
 }
 
 #midContainer  {
 	background-color: green;
+
 
 }
 
@@ -20,9 +36,15 @@
 }
 
 .color  {
+
 	border-radius: 15px;
+
+	border: 3px outset gold;
+
 	height: 145px;
+	/*
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	*/
 }
 
 .part  {
@@ -43,15 +65,23 @@
 	text-align: center;
 }
 
-.font  {
-	font-family: 'Limelight', regular;
+
+
+.font2  {
+	font-family: 'Limelight', serif;
 }
 
 button {
 	margin: 10px;
 	font-size: 1.2em;
 	border-radius: 5px;
+	border: 3px outset gold;
 	outline: none;
+	cursor:pointer;
+}
+
+button:active {
+	border: 3px inset gold;
 }
 
 .change  {
@@ -79,34 +109,36 @@ button {
 
 input[type=number] {
 	text-align: center;
-	font-size: 1em;
-	border: 3px solid #fafafa;
+	font-size: 1.4em;
+	border: 3px outset gold;
+	border-radius: 5px;
 	-webkit-transition: 0.5s;
 	transition: 0.5s;
 	outline: none;
 
-	background-color: #ccc;
+	background-color: #c0c0c0;
 }
 
 input[type=number]:focus {
-	border: 3px solid #555;
-	background-color: white;
+	border: 3px inset gold;
+	background-color: #b0b0b0;
 }
 
 input[type=text] {
 	text-align: center;
-	font-size: 1em;
-	border: 3px solid #fafafa;
+	font-size: 1.4em;
+	border-radius: 5px;
+	border: 3px outset gold;
 	-webkit-transition: 0.5s;
 	transition: 0.5s;
 	outline: none;
 
-	background-color: #ccc;
+	background-color: #c0c0c0;
 }
 
 input[type=text]:focus {
-	border: 3px solid #555;
-	background-color: white;
+	border: 3px inset gold;
+	background-color: #b0b0b0;
 }
 
 
@@ -114,7 +146,7 @@ input[type=text]:focus {
 /* the following is for the range slider boiii */
 input[type=range] {
   -webkit-appearance: none;
-  width: 35%;
+  width: 40%;
   margin: 13.8px 0;
 }
 input[type=range]:focus {
@@ -126,22 +158,22 @@ input[type=range]::-webkit-slider-runnable-track {
   cursor: pointer;
   box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
   background: #000000;
-  border-radius: 1.3px;
-  border: 0.2px solid #010101;
+  border-radius: 0px;
+  border: 0px solid #010101;
 }
 input[type=range]::-webkit-slider-thumb {
   box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
-  border: 1px solid #000000;
+  border: 2px solid #000000;
   height: 36px;
-  width: 16px;
-  border-radius: 3px;
-  background: #ffffff;
+  width: 36px;
+  border-radius: 36px;
+  background: #eaecdc;
   cursor: pointer;
   -webkit-appearance: none;
-  margin-top: -14px;
+  margin-top: -13.8px;
 }
 input[type=range]:focus::-webkit-slider-runnable-track {
-  background: #0d0d0d;
+  background: #000000;
 }
 input[type=range]::-moz-range-track {
   width: 100%;
@@ -149,16 +181,16 @@ input[type=range]::-moz-range-track {
   cursor: pointer;
   box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
   background: #000000;
-  border-radius: 1.3px;
-  border: 0.2px solid #010101;
+  border-radius: 0px;
+  border: 0px solid #010101;
 }
 input[type=range]::-moz-range-thumb {
   box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
-  border: 1px solid #000000;
+  border: 2px solid #000000;
   height: 36px;
-  width: 16px;
-  border-radius: 3px;
-  background: #ffffff;
+  width: 36px;
+  border-radius: 36px;
+  background: #eaecdc;
   cursor: pointer;
 }
 input[type=range]::-ms-track {
@@ -171,23 +203,23 @@ input[type=range]::-ms-track {
 }
 input[type=range]::-ms-fill-lower {
   background: #000000;
-  border: 0.2px solid #010101;
-  border-radius: 2.6px;
+  border: 0px solid #010101;
+  border-radius: 0px;
   box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
 }
 input[type=range]::-ms-fill-upper {
   background: #000000;
-  border: 0.2px solid #010101;
-  border-radius: 2.6px;
+  border: 0px solid #010101;
+  border-radius: 0px;
   box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
 }
 input[type=range]::-ms-thumb {
   box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
-  border: 1px solid #000000;
+  border: 2px solid #000000;
   height: 36px;
-  width: 16px;
-  border-radius: 3px;
-  background: #ffffff;
+  width: 36px;
+  border-radius: 36px;
+  background: #eaecdc;
   cursor: pointer;
   height: 8.4px;
 }
@@ -195,5 +227,5 @@ input[type=range]:focus::-ms-fill-lower {
   background: #000000;
 }
 input[type=range]:focus::-ms-fill-upper {
-  background: #0d0d0d;
+  background: #000000;
 }
